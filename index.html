@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/131a82aa8d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,800&display=swap" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <title>Product landing Project</title>
+</head>
+  
+  <!--Creation of Nav Bar-->
+<header id="header">
+  
+  <nav id="nav-bar">
+    <ul id="nav-list">
+      <a href="#top" class="nav-link">
+        <li class="nav-items">Go to Top</li>
+      </a>
+      <a href="#middle" class="nav-link">
+        <li class="nav-items">Go to Middle</li>
+      </a>
+      <a href="#bottom" class="nav-link">
+        <li class="nav-items">Go to Bottom</li>
+      </a>
+    </ul>
+  </nav>
+ 
+  <div id="top"></div>
+  <body>
+    <img src="https://img-aws.ehowcdn.com/340x221p/photos.demandstudios.com/155/16/fotolia_11337979_XS.jpg" alt="Company Logo" id="header-img">
+<!--Dual color styling of Title-->
+    <h1 id="lg-heading-primary">Our <span id="lg-heading-secondary">Company</span></h1>
+</header>
+
+<div id="middle"></div>
+  
+  <!--Using grid layout for this section-->
+<div id="grid-container">
+  <div id="grid-left"></div>
+  <div id="grid-right"></div>
+  <div id="grid-empty"></div>
+  <i class="fas fa-shipping-fast" id="icon-shipping"></i>
+
+  <h4 id="heading-shipping">Fast, Free Shipping!</h4>
+  <article id="shipping">We sell it, we ship it! Orders over $50 ship free! Ask about our subscription service for free two day shipping!</article>
+
+  <i class="fas fa-phone-volume" id="phone-icon"></i>
+
+  <h4 id="phone-heading">Fast, Friendly Support!</h4>
+  <article id="phone">24/7 customer support standing by to assist you with any questions or concerns. For troubleshooting, our industry trained technicians are waiting to assist you!</article>
+
+  <i class="fas fa-solar-panel" id="green-icon"></i>
+
+  <h4 id="green-heading">Green Ready!</h4>
+  <article id="green-energy">We here are committed to limiting our impact on the environment. We utilize the latest technolgies in our manufacturing process and our fleet service is 100% electric vehicles!</article>
+</div>
+  
+<!--Video Section-->
+<h2 id="video-heading">Watch our demo!</h2>
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/eLzoJYVPNkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+<!-- Form  -->
+<h2 id="form-heading">Feel free to contact us!</h2>
+<div id="form-container">
+
+  <form action="https://www.freecodecamp.com/email-submit" id="form" method="POST">
+    <label id="label-email">Email:<input name="email" type="email" id="email" placeholder="youremail@gmail.com"></label>
+    <input type="submit" id="submit">
+  </form>
+</div>
+
+</main>
+<div id="bottom"></div>
+
+<footer id="footer">
+  Copyright &copy 2019
+</footer>
+</div>
+</>
+
+</html>

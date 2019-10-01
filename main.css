@@ -1,0 +1,204 @@
+body {
+  font-family: "Big Shoulders Display", cursive;
+  background-image: linear-gradient(
+    25deg,
+    rgba(50, 98, 168, 0),
+    rgba(50, 98, 168, 1)
+  );
+}
+/*Nav Bar styling*/
+#nav-bar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 5;
+}
+
+#nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0, 0, 25px, 0;
+  overflow: hidden;
+  background-color: steelblue;
+}
+
+.nav-items {
+  float: center;
+  color: goldenrod;
+}
+
+.nav-link {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: beige;
+}
+
+#header-img {
+  padding: 50px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  box-shadow: 10px 10px 15px;
+}
+
+h1 {
+  font-size: 5rem;
+  display: block;
+  text-align: center;
+  border-bottom: 5px solid goldenrod;
+  margin: 15px 500px 15px 500px;
+}
+
+span {
+  color: goldenrod;
+}
+/* Building the grid*/
+#grid-container {
+  display: grid;
+  height: 1000px;
+  width: 100%;
+  justify-content: center;
+  grid-column-gap: 75px;
+  grid-template-columns: 400px 250px auto auto;
+  grid-template-areas:
+    "left icon-1 heading-1 right"
+    "left empty-1 content-1 right"
+    "left icon-2 heading-2 right"
+    "left empty-2 content-2 right"
+    "left icon-3 heading-3 right"
+    "left empty-3 content-3 right";
+}
+
+@media only screen and (max-width: 600px) {
+  #grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+#grid-empty {
+  grid-area: empty;
+}
+#grid-left {
+  grid-area: left;
+}
+#grid-right {
+  grid-area: right;
+}
+#icon-shipping {
+  grid-area: icon-1;
+  color: goldenrod;
+  background-color: beige;
+  font-size: 6rem;
+  border: 1px solid beige;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 10px 10px 15px goldenrod;
+}
+#heading-shipping {
+  grid-area: heading-1;
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+}
+#shipping {
+  grid-area: content-1;
+  text-align: center;
+  font-size: 2rem;
+}
+#phone-icon {
+  grid-area: icon-2;
+  color: goldenrod;
+  background-color: beige;
+  font-size: 6rem;
+  border: 1px solid beige;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 10px 10px 15px goldenrod;
+}
+#phone-heading {
+  grid-area: heading-2;
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+}
+#phone {
+  grid-area: content-2;
+  text-align: center;
+  font-size: 2rem;
+}
+#green-icon {
+  grid-area: icon-3;
+  color: goldenrod;
+  background-color: beige;
+  font-size: 6rem;
+  border: 1px solid beige;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 10px 10px 15px goldenrod;
+}
+#green-heading {
+  grid-area: heading-3;
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+}
+#green-energy {
+  grid-area: content-3;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Video Styling  */
+#video-heading {
+  text-align: center;
+  border-bottom: 3px solid goldenrod;
+  margin: 15px 500px 15px 500px;
+}
+
+#video {
+  display: block;
+  margin: auto auto;
+  max-width: 100%;
+}
+
+#form-heading {
+  text-align: center;
+  border-bottom: 3px solid goldenrod;
+  margin: 15px 500px 15px 500px;
+}
+
+#form-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#email {
+  margin: 5px;
+  border-bottom: 2px solid goldenrod;
+  background-color: lightgray;
+}
+
+#label-email {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+#submit {
+  font-weight: 800;
+  background-color: steelblue;
+  border: 3px inset goldenrod;
+}
+
+#submit:hover {
+  background-color: beige;
+  cursor: pointer;
+}
